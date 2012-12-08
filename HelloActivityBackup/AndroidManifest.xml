@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.helloactivity" >
+
+    <application android:label="Welcome to HR Systems!"
+         android:theme="@android:style/Theme.Holo" >
+        <activity android:name="HelloActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.android.helloactivity.Menu" >
+        </activity>
+        <activity android:name="com.example.android.helloactivity.Editdetails" >
+        </activity>
+        <activity android:name="com.example.android.helloactivity.Viewdetails" >
+        </activity>
+        <activity android:name="com.example.android.helloactivity.TestConnect" >
+        </activity>
+        <activity android:name="com.example.android.helloactivity.TestPost" >
+        </activity>
+        <activity android:name="com.example.android.helloactivity.GmailLogin" >
+        </activity>
+         <activity android:name="com.example.android.helloactivity.SearchMenu" >
+        </activity>
+         <activity android:name="com.example.android.helloactivity.SearchById" >
+        </activity>
+        <activity android:name="com.example.android.helloactivity.SearchByName" >
+        </activity>
+         <activity android:name="com.example.android.helloactivity.SearchedEmpDetails" >
+        </activity>
+        <activity android:name="com.example.android.helloactivity.EmpList" >
+        </activity>
+         <activity android:name="com.example.android.helloactivity.Upload" >
+        </activity>
+        <activity android:name="com.example.android.helloactivity.ViewMails" >
+        </activity>
+        <activity android:name="com.example.android.helloactivity.Mailbody" >
+        </activity>
+         <activity android:name="com.example.android.helloactivity.Callinterface" >
+        </activity>
+         <activity android:name="com.example.android.helloactivity.DBRoulette" >
+        </activity>
+        <activity android:name="com.example.android.helloactivity.AndroidTwitterSample" >
+        </activity>
+        <activity android:name="com.example.android.helloactivity.PrepareRequestTokenActivity" android:launchMode="singleTask">>
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.BROWSABLE" />
+				<data android:scheme="x-oauthflow-twitter" android:host="callback" />
+			</intent-filter>
+		</activity>
+        <activity
+            android:name=".Imageview1"
+            android:label="@string/title_activity_imageview1" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.dropbox.client2.android.AuthActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask" >
+            <intent-filter>
+
+                <!-- Change this to be db- followed by your app key -->
+                <data android:scheme="db-yuyjrkuztxm5e6y" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+       
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.CALL_PHONE" />
+<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+</manifest>
